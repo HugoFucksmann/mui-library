@@ -1,0 +1,38 @@
+{
+  "name": "mui-library_colodev",
+  "version": "1.0.3",
+  "description": "mui 5 styled library components",
+  "main": "dist/index.cjs.js",
+
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "keywords": [
+    "react",
+    "mui",
+    "library",
+    "styles"
+  ],
+  "author": "colodev",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.12",
+    "@babel/plugin-transform-runtime": "^7.17.12",
+    "@babel/preset-env": "^7.17.12",
+    "@babel/preset-react": "^7.17.12",
+    "@rollup/plugin-babel": "^5.3.1",
+    "autoprefixer": "^10.4.7",
+    "rollup": "^2.73.0",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-styles": "^4.0.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.17.9"
+  }
+}
