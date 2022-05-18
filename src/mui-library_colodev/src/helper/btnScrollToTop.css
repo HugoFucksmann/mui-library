@@ -1,0 +1,23 @@
+
+.btnScroll {
+    position: fixed;
+  z-index: 999;
+  cursor: pointer;
+  background-color: #f2f2f2;
+  bottom: 20px;
+  right: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 25px;
+  filter: drop-shadow(1px 1px 2px #303030);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s;
+  visibility: hidden;
+}
+
+.btnScroll:hover {
+    transform: translateY(-8px)
+}
