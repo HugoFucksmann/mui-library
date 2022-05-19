@@ -1,0 +1,78 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* A high perspective to give the UL an isometric look  */
+
+body {
+    overflow: hidden;
+    background-image: linear-gradient(45deg, #6e6f74, #202022);
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-perspective: 4000;
+   
+}
+
+.background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    z-index: 900;
+    width: 300%;
+    height: 300%;
+
+    flex-wrap: wrap;
+    -webkit-transform: translate(-50%, -50%) rotateX(65deg) rotateZ(-50deg) scale(1);
+    overflow: hidden;
+}
+
+.background span {
+    margin: 0;
+    height: 200px;
+    width: 300px;
+    border: 2px solid #0f0f0f;
+    box-sizing: border-box;
+    box-shadow: inset 3px 0 0px -1px #4b4c4f, inset 0 -3px 1px -1px #424346, inset 0 -4px 0 -1px #353639, inset 5px 0 1px -1px rgba(182, 182, 190, 0.6), inset 0 -5px 1px -1px rgba(182, 182, 190, 0.2);
+}
+
+
+
+.grid {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 1060px;
+    transform: rotateX(65deg) rotateZ(-50deg);
+    transform-style: preserve-3d;
+}
+
+
+
+
+
+
+.s {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 30px;
+    background: rgba(0, 0, 0, .5);
+    box-shadow: 0 0 30px 30px rgba(0, 0, 0, 0.5);
+    -webkit-transform: translateZ(-50px);
+}
+
+
+li {
+    background: #999;
+}

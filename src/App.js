@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import {AwesomeButton} from "mui-library_colodev";
+import Text3d from "./mui-library_colodev/src/textEff/3dText.js/text3d";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <AwesomeButton>Hola Mundo</AwesomeButton>
-        </a>
-      </header>
-    </div>
+    <>
+      <div
+        style={{
+          height: "100vh",
+          overflow: "hidden",
+          width: "80%",
+        }}>
+        <Text3d>Colo Developer</Text3d>
+      </div>
+    </>
   );
 }
 
