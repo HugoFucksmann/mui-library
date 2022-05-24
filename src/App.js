@@ -1,14 +1,14 @@
+import ExpandedCard from "./mui-library_colodev/src/cards/expandedCard/expandedCard";
+import GradiantPurpleText from "./mui-library_colodev/src/textEff/gradiantPurpleText/gradiantPurpleText";
+
 function App() {
   return (
-    <>
-      <div
-        style={{
-          height: "100vh",
-          //overflow: "hidden",
-          width: "100%",
-          // backgroundColor: "darkblue",
-        }}></div>
-    </>
+    <div
+      style={{
+        width: "60vw",
+      }}>
+      <ExpandedCard />
+    </div>
   );
 }
 

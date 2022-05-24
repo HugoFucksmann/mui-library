@@ -3,22 +3,19 @@ import "./expandedCard.css";
 
 const ExpandedCard = (props) => {
   return (
-    <div class='container'>
-      {props.cardData.map(() => (
+    <div class='container' {...props}>
+      {props.cardData.map((card) => (
         <div class='card'>
           <div class='face face1'>
             <div class='content'>
-              <img src='https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true' />
-              <h3>Design</h3>
+              <img src={card.img} />
+              <h3>{card.title}</h3>
             </div>
           </div>
           <div class='face face2'>
             <div class='content'>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                cum cumque minus iste veritatis provident at.
-              </p>
-              <a href='#'>Read More</a>
+              <p>{card.subtitle}</p>
+              <a onClick={() => card.func()}>{card.btn}</a>
             </div>
           </div>
         </div>
@@ -28,7 +25,29 @@ const ExpandedCard = (props) => {
 };
 
 ExpandedCard.defaultProps = {
-  cardData: [1, 2, 3],
+  cardData: [
+    {
+      title: "title",
+      subtitle: "subtitle",
+      btn: "btn",
+      img: "https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true",
+      func: () => {},
+    },
+    {
+      title: "title",
+      subtitle: "subtitle",
+      btn: "btn",
+      img: "https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true",
+      func: () => {},
+    },
+    {
+      title: "title",
+      subtitle: "subtitle",
+      btn: "btn",
+      img: "https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true",
+      func: () => {},
+    },
+  ],
 };
 
 export default ExpandedCard;

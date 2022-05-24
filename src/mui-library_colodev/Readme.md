@@ -1,6 +1,6 @@
-# Mui Component Library
+# Component Library
 
-This is a MUI 5 styled component library for React proyects
+This is a styled component library for React proyects
 
 ## Installation
 
@@ -18,18 +18,20 @@ Import AwesomeButton from mui-library_colodev to your project.
 import { AwesomeButton } from "mui-library_colodev";
 
 function App() {
-  
   return (
     <>
-      <AwesomeButton >
-        Awesome Button
-      </AwesomeButton>
+      <AwesomeButton>Awesome Button</AwesomeButton>
     </>
   );
 }
 ```
 
 ## List of Components
+
+### Text Effect
+
+- Text3d
+- GradiantPurpleText
 
 ### Buttons
 
@@ -39,10 +41,16 @@ function App() {
 
 - BtnScroll
 
+### Complex Components
+
+- ExpandedCard
+
 ## Contributing
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
 
 ## License
+
 [ISC]
