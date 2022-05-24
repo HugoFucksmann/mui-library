@@ -41,7 +41,7 @@ function App() {
 
 - BtnScroll
 
-### Complex Components
+### Cards
 
 - ExpandedCard
 
