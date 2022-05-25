@@ -9,7 +9,7 @@
     transform: translate(-63%, -63%);
 }
 
-main {
+.mainn {
     display: grid;
     grid-template-columns: repeat(3, 280px);
     grid-template-rows: repeat(3, 280px);

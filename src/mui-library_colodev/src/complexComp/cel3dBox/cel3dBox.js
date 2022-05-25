@@ -1,6 +1,6 @@
 import "./cel3dBox.css";
 
-const Cel3dBox = () => {
+const Cel3dBox = (props) => {
   return (
     <div class='container'>
       <input
@@ -19,30 +19,12 @@ const Cel3dBox = () => {
           <a class='exit' href='#' tabindex='0'></a>
         </div>
         <ul class='middle'>
-          <li tabindex='0'>
-            <i class='fa fa-calendar'></i>Calendar
-          </li>
-          <li tabindex='0'>
-            <i class='fa fa-camera'></i>Photos
-          </li>
-          <li tabindex='0'>
-            <i class='fa fa-check-square-o'></i>Tasks
-          </li>
-          <li tabindex='0'>
-            <i class='fa fa-map-marker'></i>Places
-          </li>
-          <li tabindex='0'>
-            <i class='fa fa-codepen'></i>Codepen
-          </li>
-          <li tabindex='0'>
-            <i class='fa fa-dribbble'></i>Dribbble
-          </li>
-          <li tabindex='0'>
-            <i class='fa fa-user'></i>User account
-          </li>
-          <li tabindex='0'>
-            <i class='fa fa-cogs'></i>Settings
-          </li>
+          {props.menuData.map((data) => (
+            <li tabindex='0'>
+              <i class='fa fa-calendar'></i>
+              {data}
+            </li>
+          ))}
         </ul>
         <div class='bottom'></div>
         <div class='menu-back'></div>
@@ -51,4 +33,18 @@ const Cel3dBox = () => {
     </div>
   );
 };
+
+Cel3dBox.defaultProps = {
+  menuData: [
+    "React",
+    "NodeJS",
+    "Python",
+    "Symfony",
+    "Twig",
+    "Angular",
+    "JavaScript",
+    "PHP",
+  ],
+};
+
 export default Cel3dBox;

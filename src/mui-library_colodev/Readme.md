@@ -33,9 +33,10 @@ function App() {
 - Text3d
 - GradiantPurpleText
 
-### Buttons
+### Complex Components
 
-- AwesomeButton
+- FlipTabletCards
+- CellCardStatic2
 
 ### Helpers
 

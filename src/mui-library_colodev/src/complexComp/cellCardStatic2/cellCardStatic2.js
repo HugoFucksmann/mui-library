@@ -1,223 +1,99 @@
-import React, { PureComponent } from "react";
+import React from "react";
+import PropTypes from "prop-types";
 import "./cellCardStatic2.css";
 
-const CellCardStatic2 = () => {
+const CellCardStatic2 = (props) => {
   return (
-    <body>
-      <div class='wrapper'>
-        <main>
-          <div class='mob example1'>
-            <div class='up'>
-              <div class='decorLine'></div>
+    <div className='wrapper'>
+      <div className='mainn'>
+        {props.contents.map((data, i) => (
+          <div key={i + 200} className={"mob example" + (i + 1)}>
+            <div className='up'>
+              <div className='decorLine'></div>
             </div>
-            <div class='middle'>
-              <div class='phone-wrapper'>
-                <h1 class='number-heading'>01</h1>
-                <p class='phone-text'>Psd mockup</p>
-                <h2 class='text-heading'>
-                  the <span class='bold-text'>New Styles</span>
-                  <span class='gradient-text'> ...</span>
-                </h2>
-                <div class='horizontal-line'></div>
-                <p class='phone-text'>
-                  Refresh your
-                  <br />
-                  mobile app showcase
-                </p>
-                <p class='made-by-text'>by tranmautriram</p>
-              </div>
+            <div className='middle'>
+              <div className='phone-wrapper'>{data}</div>
             </div>
-            <div class='down'>
-              <div class='circle'></div>
-              <div class='furniture'>
-                <div class='firstCircleGroup'>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                </div>
-
-                <div class='charger'></div>
-
-                <div class='secondCircleGroup'>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                </div>
+            <div className='down'>
+              <div className='circle'></div>
+              <div className='furniture'>
+                <div className='charger'></div>
               </div>
             </div>
           </div>
-          <div class='mob example2'>
-            <div class='up'>
-              <div class='decorLine'></div>
-            </div>
-            <div class='middle'>
-              <div class='phone-wrapper'>
-                <h1 class='number-heading'>02</h1>
-                <p class='phone-text'>Psd mockup</p>
-                <h2 class='text-heading'>
-                  the <span class='bold-text'>New Styles</span>
-                  <span class='gradient-text'> ...</span>
-                </h2>
-                <div class='horizontal-line'></div>
-                <p class='phone-text'>
-                  Refresh your
-                  <br />
-                  mobile app showcase
-                </p>
-                <p class='made-by-text'>by tranmautriram</p>
-              </div>
-            </div>
-            <div class='down'>
-              <div class='circle'></div>
-              <div class='furniture'>
-                <div class='firstCircleGroup'>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                </div>
-
-                <div class='charger'></div>
-
-                <div class='secondCircleGroup'>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class='mob example3'>
-            <div class='up'>
-              <div class='decorLine'></div>
-            </div>
-            <div class='middle'>
-              <div class='phone-wrapper'>
-                <h1 class='number-heading'>03</h1>
-                <p class='phone-text'>Psd mockup</p>
-                <h2 class='text-heading'>
-                  the <span class='bold-text'>New Styles</span>
-                  <span class='gradient-text'> ...</span>
-                </h2>
-                <div class='horizontal-line'></div>
-                <p class='phone-text'>
-                  Refresh your
-                  <br />
-                  mobile app showcase
-                </p>
-                <p class='made-by-text'>by tranmautriram</p>
-              </div>
-            </div>
-            <div class='down'>
-              <div class='circle'></div>
-              <div class='furniture'>
-                <div class='firstCircleGroup'>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                </div>
-
-                <div class='charger'></div>
-
-                <div class='secondCircleGroup'>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class='mob example4'>
-            <div class='up'>
-              <div class='decorLine'></div>
-            </div>
-            <div class='middle'>
-              <div class='phone-wrapper'>
-                <h1 class='number-heading'>04</h1>
-                <p class='phone-text'>Psd mockup</p>
-                <h2 class='text-heading'>
-                  the <span class='bold-text'>New Styles</span>
-                  <span class='gradient-text'> ...</span>
-                </h2>
-                <div class='horizontal-line'></div>
-                <p class='phone-text'>
-                  Refresh your
-                  <br />
-                  mobile app showcase
-                </p>
-                <p class='made-by-text'>by tranmautriram</p>
-              </div>
-            </div>
-            <div class='down'>
-              <div class='circle'></div>
-              <div class='furniture'>
-                <div class='firstCircleGroup'>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                </div>
-
-                <div class='charger'></div>
-
-                <div class='secondCircleGroup'>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                  <div class='smallCircle'></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </main>
+        ))}
       </div>
-    </body>
+    </div>
   );
+};
+
+CellCardStatic2.propTypes = {
+  contents: PropTypes.arrayOf(PropTypes.element).isRequired,
+};
+
+CellCardStatic2.defaultProps = {
+  contents: [
+    <>
+      <h1 className='number-heading'>01</h1>
+      <p className='phone-text'>Psd mockup</p>
+      <h2 className='text-heading'>
+        the <span className='bold-text'>New Styles</span>
+        <span className='gradient-text'> ...</span>
+      </h2>
+      <div className='horizontal-line'></div>
+      <p className='phone-text'>
+        Refresh your
+        <br />
+        mobile app showcase
+      </p>
+      <p className='made-by-text'>by ColoDev</p>{" "}
+    </>,
+    <>
+      <h1 className='number-heading'>02</h1>
+      <p className='phone-text'>Psd mockup</p>
+      <h2 className='text-heading'>
+        the <span className='bold-text'>New Styles</span>
+        <span className='gradient-text'> ...</span>
+      </h2>
+      <div className='horizontal-line'></div>
+      <p className='phone-text'>
+        Refresh your
+        <br />
+        mobile app showcase
+      </p>
+      <p className='made-by-text'>by ColoDev</p>{" "}
+    </>,
+    <>
+      <h1 className='number-heading'>03</h1>
+      <p className='phone-text'>Psd mockup</p>
+      <h2 className='text-heading'>
+        the <span className='bold-text'>New Styles</span>
+        <span className='gradient-text'> ...</span>
+      </h2>
+      <div className='horizontal-line'></div>
+      <p className='phone-text'>
+        Refresh your
+        <br />
+        mobile app showcase
+      </p>
+      <p className='made-by-text'>by ColoDev</p>{" "}
+    </>,
+    <>
+      <h1 className='number-heading'>04</h1>
+      <p className='phone-text'>Psd mockup</p>
+      <h2 className='text-heading'>
+        the <span className='bold-text'>New Styles</span>
+        <span className='gradient-text'> ...</span>
+      </h2>
+      <div className='horizontal-line'></div>
+      <p className='phone-text'>
+        Refresh your
+        <br />
+        mobile app showcase
+      </p>
+      <p className='made-by-text'>by ColoDev</p>{" "}
+    </>,
+  ],
 };
 
 export default CellCardStatic2;

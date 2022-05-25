@@ -9,23 +9,6 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    font-family: Lato, Sans-serif;
-    font-size: 12px;
-    background: #353138;
-    background: -moz-radial-gradient(center, ellipse cover, #353138 0%, #1a181c 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #353138), color-stop(100%, #1a181c));
-    background: -webkit-radial-gradient(center, ellipse cover, #353138 0%, #1a181c 100%);
-    background: -o-radial-gradient(center, ellipse cover, #353138 0%, #1a181c 100%);
-    background: -ms-radial-gradient(center, ellipse cover, #353138 0%, #1a181c 100%);
-    background: radial-gradient(ellipse at center, #353138 0%, #1a181c 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#353138', endColorstr='#1a181c', GradientType=1);
-}
 
 .container {
     margin: 0;
@@ -354,11 +337,11 @@ input.toggle:checked~.menu {
     -ms-transition: box-shadow 1s;
     -o-transition: box-shadow 1s;
     transition: box-shadow 1s;
-    -webkit-transform: rotateZ(-1deg) translateZ(1px) skewY(60deg);
-    -moz-transform: rotateZ(-1deg) translateZ(1px) skewY(60deg);
-    -ms-transform: rotateZ(-1deg) translateZ(1px) skewY(60deg);
-    -o-transform: rotateZ(-1deg) translateZ(1px) skewY(60deg);
-    transform: rotateZ(-1deg) translateZ(1px) skewY(60deg);
+    -webkit-transform: rotateZ(-1deg) translateZ(1px) skewY(70deg);
+    -moz-transform: rotateZ(-1deg) translateZ(1px) skewY(70deg);
+    -ms-transform: rotateZ(-1deg) translateZ(1px) skewY(70deg);
+    -o-transform: rotateZ(-1deg) translateZ(1px) skewY(70deg);
+    transform: rotateZ(-1deg) translateZ(1px) skewY(70deg);
 
     -webkit-box-shadow: inset 0px -40px 0px -50px rgba(255, 255, 255, 0.0);
     -moz-box-shadow: inset 0px -40px 0px -50px rgba(255, 255, 255, 0.0);

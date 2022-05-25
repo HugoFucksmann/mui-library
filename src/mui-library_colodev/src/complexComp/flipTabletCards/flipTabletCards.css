@@ -1,7 +1,4 @@
 
-
-
-
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -30,7 +27,7 @@
     top: 0px;
     z-index: 100;
     overflow: hidden;
-    background-image: url(https://cdn.dribbble.com/users/2116826/screenshots/4751577/github_dark_preview.png);
+  
     border-top: solid 2px hsl(0, 0%, 10%);
     border-right: solid 2px hsl(0, 0%, 10%);
     border-bottom: solid 2px hsl(0, 0%, 20%);
@@ -88,6 +85,11 @@
         transform 0.3s ease-out;
     transform:
         rotateX(55deg) rotateY(0deg) rotateZ(-40deg) translate3d(0px, 0px, 0px);
+}
+
+.imgfondo {
+    width: 100%;
+    height: 100%;
 }
 
 .card:hover .card__shadow {
