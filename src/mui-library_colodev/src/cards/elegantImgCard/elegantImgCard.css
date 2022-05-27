@@ -1,17 +1,22 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #f3eee8;
-}
-
-.wrapper {
-    margin: 0 auto;
+.cardd {
+    height: 100%;
+    width: 100%;
+    max-height: 420px;
     max-width: 650px;
+    background-color: blue;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+}
 
+.imiddiv {
+    width: 50%;
+    height: 100%
+}
+
+.padding {
+    box-sizing: border-box;
+    padding: 55px 40px;
 }
 
 .flower_box {
@@ -31,7 +36,7 @@ body {
     width: 50%;
     height: 100%;
     display: block;
-  
+
     background-size: cover;
     border-radius: 8px 0 0 8px;
 }
@@ -43,13 +48,13 @@ body {
     float: left;
 }
 
-h1 {
+#elegant-title {
     color: rgba(0, 0, 0, 0.7);
     font: normal 300 34px/30px 'Cinzel', serif;
     text-align: left;
 }
 
-h5 {
+#elegant-subtitle {
     text-transform: uppercase;
     font: normal 500 14px/30px 'Cinzel', serif;
     color: rgba(71, 71, 71, 0.7);
@@ -65,37 +70,33 @@ hr {
     margin-top: 20px;
 }
 
-p {
+#elegant-p {
     text-align: left;
     color: rgba(71, 71, 71, 0.8);
     font: 500 16px/26px 'Lato', sans-serif;
     margin-top: 20px;
 }
 
-span {
-    margin-top: 30px;
-    float: left;
-    font: normal 500 28px/26px 'Lato', sans-serif;
-    color: rgba(71, 71, 71, 1);
-}
 
-button {
-    float: right;
+
+#elegant-btn {
+    cursor: pointer;
+    float: left;
     margin-top: 20px;
     width: 175px;
     height: 50px;
     border-radius: 40px;
     outline: 0;
     border: 0;
-    background-color: rgba(125, 231, 202, 1);
+    transition: 0.3s linear;
     color: black;
     font: normal 500 13px/30px 'Lato', sans-serif;
     letter-spacing: 3px;
     text-transform: uppercase;
 }
 
-button:hover {
-    cursor: pointer;
-    background-color: rgba(92, 200, 170, 1);
-    transition: 0.5s ease-out;
+#elegant-btn:hover {
+    transform: scale(0.9);
+
+
 }

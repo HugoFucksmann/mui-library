@@ -1,18 +1,23 @@
 import { useEffect, useState } from "react";
 import ElegantImgCard from "./mui-library_colodev/src/cards/elegantImgCard/elegantImgCard";
-import ff from "./ff.png";
-import { setRgb } from "./mui-library_colodev/src/helpers/imgColor";
+import ff from "./aa.webp";
+import { getAverageRGB } from "./helpers/imgColor";
+
 function App() {
   const [imgColor, setImgColor] = useState("loading");
   useEffect(() => {
-    setImgColor(setRgb(ff));
+    let img = new Image();
+    img.src = ff;
+    img.onload = function () {
+      setImgColor(getAverageRGB(img));
+    };
   }, []);
 
   if (imgColor === "loading") return <>Loading...</>;
-  console.log(imgColor);
+
   return (
-    <div>
-      <ElegantImgCard image={ff} imgCol={imgColor} />
+    <div style={{ margin: 100, height: 820 }}>
+      <ElegantImgCard image={ff} imgcolor={imgColor} />
     </div>
   );
 }
